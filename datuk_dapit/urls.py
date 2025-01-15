@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from reportUpload import views as ReportUpload
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('upload/', ReportUpload.UploadPage.as_view(), name='report_upload'),
 ]
