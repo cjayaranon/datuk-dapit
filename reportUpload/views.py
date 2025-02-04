@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView, FormView
 
-# Create your views here.
+class UploadPage(TemplateView):
+    template_name = 'upload_file_page.html'
+
+    
